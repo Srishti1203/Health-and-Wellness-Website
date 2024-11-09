@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 80px;
+    margin-right: 15px;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Darker shade for headings */
+}
+
+.introduction, .benefits, .workout-plans, .fitness-tips, .yoga-and-meditation, .success-stories, .additional-resources, .fitness-challenges, .community-forum, .mental-wellness, .motivational-quotes, .fitness-goals, .inspirational-stories, .fitness-videos, .fitness-apps {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.introduction:hover, .benefits:hover, .workout-plans:hover, .fitness-tips:hover, .yoga-and-meditation:hover, .success-stories:hover, .additional-resources:hover, .fitness-challenges:hover, .community-forum:hover, .mental-wellness:hover, .motivational-quotes:hover, .fitness-goals:hover, .inspirational-stories:hover, .fitness-videos:hover, .fitness-apps:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Blockquote Styles */
+blockquote {
+    font-style: italic;
+    color: #7f8c8d;
+    border-left: 4px solid #6dd5ed;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.4s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.introduction, .benefits, .workout-plans, .fitness-tips, .yoga-and-meditation, .success-stories, .additional-resources, .fitness-challenges, .community-forum, .mental-wellness, .motivational-quotes, .fitness-goals, .inspirational-stories, .fitness-videos, .fitness-apps {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Additional Graphics */
+body {
+    background-image: url('images/fitness-background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
